@@ -1,36 +1,343 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>UX/UI final group project</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
-    <body>
-         <!-- *Nav start* --> 
-         <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
-            <a class="navbar-brand" href="#">Therapy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Self-help Resources</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Emergency Management</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Payment</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </nav> 
-          <!-- *Nav end* -->
-    </body>
+<html lang="en">
+  <head>
+    <!-- retrived from https://codingartistweb.com/2021/11/product-filter-and-search-using-javascript/ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GTCoding</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+      <div class="container">  
+      <!-- Category 1 start -->
+      <h2>Location</h2>
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="automobiles"
+              name="category"
+            />
+            <label for="automobiles">Automobiles</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Film & Animation</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Science & Technology</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Art</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">Music</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Sports</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected">
+          Select Video Category
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Start Typing..." />
+        </div>
+      </div>
+      <!-- Category 1 end -->
+
+      <!-- Category 2 start -->
+      <h2>Specialty</h2>
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="automobiles"
+              name="category"
+            />
+            <label for="automobiles">Automobiles</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Film & Animation</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Science & Technology</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Art</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">Music</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Sports</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected">
+          Select Video Category
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Start Typing..." />
+        </div>
+      </div>
+      <!-- Category 2 end -->
+      <!-- Category 3 start -->
+      <h2>Insurance</h2>
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="automobiles"
+              name="category"
+            />
+            <label for="automobiles">Automobiles</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Film & Animation</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Science & Technology</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Art</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">Music</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Sports</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected">
+          Select Video Category
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Start Typing..." />
+        </div>
+      </div>
+      <!-- Category 3 end -->
+      <!-- Category 4 start -->
+      <h2>Virtual Session</h2>
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="automobiles"
+              name="category"
+            />
+            <label for="automobiles">Automobiles</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Film & Animation</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Science & Technology</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Art</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">Music</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Sports</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected">
+          Select Video Category
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Start Typing..." />
+        </div>
+      </div>
+      <!-- Category 4 end --> 
+      <!-- Category 5 start -->
+      <h2>Accepting New Clients</h2>
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="automobiles"
+              name="category"
+            />
+            <label for="automobiles">Automobiles</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Film & Animation</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Science & Technology</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Art</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">Music</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Sports</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected">
+          Select Video Category
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Start Typing..." />
+        </div>
+      </div>
+      <!-- Category 5 end -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
